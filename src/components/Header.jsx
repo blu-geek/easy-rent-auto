@@ -1,0 +1,39 @@
+import React from 'react';
+import { Link } from 'react-router-dom';
+import { Phone } from 'lucide-react';
+
+export default function Header() {
+  return (
+    <header className="bg-white shadow-sm sticky top-0 z-50">
+      <div className="container mx-auto px-4 h-20 flex items-center justify-between">
+        <div className="flex items-center gap-2">
+          <div className="text-2xl font-bold text-gray-800">
+            <span className="text-orange-500">EASY</span>RENT<span className="font-light text-gray-400">AUTO</span>
+          </div>
+        </div>
+
+        <div className="hidden md:flex items-center space-x-8">
+          <nav className="flex items-center space-x-6 font-medium text-gray-600">
+            <Link to="/" className="hover:text-orange-500 transition-colors">Home</Link>
+            <Link to="/" className="hover:text-orange-500 transition-colors">Vehicles</Link>
+            <Link to="/" className="hover:text-orange-500 transition-colors">Services</Link>
+            <Link to="/" className="hover:text-orange-500 transition-colors">Locations</Link>
+            <Link to="/" className="hover:text-orange-500 transition-colors">Contact</Link>
+          </nav>
+          
+          <div className="flex items-center gap-2 text-orange-500 font-bold text-lg">
+            <Phone className="w-5 h-5" />
+            <span>(306) 242-0000</span>
+          </div>
+        </div>
+
+        {/* Mobile menu button placeholder */}
+        <button className="md:hidden p-2">
+          <div className="w-6 h-0.5 bg-gray-800 mb-1.5"></div>
+          <div className="w-6 h-0.5 bg-gray-800 mb-1.5"></div>
+          <div className="w-6 h-0.5 bg-gray-800"></div>
+        </button>
+      </div>
+    </header>
+  );
+}
