@@ -213,7 +213,7 @@ export default function ReservationForm() {
 
         <Button 
           type="submit" 
-          className="w-full bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 text-lg rounded-md shadow-md transition-all transform active:scale-95"
+          className="w-full bg-[#8dc63f] hover:bg-[#7ab135] text-white font-bold py-3 text-lg rounded-md shadow-md transition-all transform active:scale-95"
           disabled={mutation.isPending}
         >
           {mutation.isPending ? "Processing..." : "RESERVE NOW"}

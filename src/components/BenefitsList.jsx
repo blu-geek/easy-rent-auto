@@ -51,13 +51,13 @@ export default function BenefitsList() {
       <div className="container mx-auto px-4">
         <div className="text-center mb-10">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-2">Why Choose Easy Rent Auto?</h2>
-          <div className="w-24 h-1 bg-orange-500 mx-auto"></div>
+          <div className="w-24 h-1 bg-[#8dc63f] mx-auto"></div>
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {benefits.map((benefit, index) => (
             <div key={index} className="flex items-start gap-3 p-2 hover:bg-white rounded-lg transition-colors duration-200">
-              <div className="mt-1 flex-shrink-0 w-5 h-5 rounded-full bg-orange-100 flex items-center justify-center text-orange-500">
+              <div className="mt-1 flex-shrink-0 w-5 h-5 rounded-full bg-[#8dc63f]/10 flex items-center justify-center text-[#8dc63f]">
                 <Check className="w-3 h-3" />
               </div>
               <span className="text-gray-700 font-medium">{benefit}</span>
