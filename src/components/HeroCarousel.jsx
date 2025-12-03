@@ -39,7 +39,7 @@ export default function HeroCarousel() {
   const prev = () => setCurrent((prev) => (prev - 1 + slides.length) % slides.length);
 
   return (
-    <div className="relative w-full h-[400px] md:h-[500px] overflow-hidden bg-white">
+    <div className="relative w-full h-[400px] md:h-[500px] overflow-hidden bg-transparent">
       <div className="absolute inset-0 flex items-center justify-center">
         <AnimatePresence mode='wait'>
           <motion.div
@@ -50,10 +50,10 @@ export default function HeroCarousel() {
             transition={{ duration: 0.5 }}
             className="flex flex-col items-center text-center px-4 max-w-4xl mx-auto"
           >
-            <h1 className="text-2xl md:text-4xl font-bold text-[#333] mb-2">
+            <h1 className="text-2xl md:text-4xl font-bold text-white mb-2 shadow-sm">
               {slides[current].title}
             </h1>
-            <p className="text-lg md:text-xl text-[#666] mb-8 font-light">
+            <p className="text-lg md:text-xl text-white/90 mb-8 font-light shadow-sm">
               {slides[current].subtitle}
             </p>
             <div className="relative w-full max-w-2xl h-48 md:h-64">

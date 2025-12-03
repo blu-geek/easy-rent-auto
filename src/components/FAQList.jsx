@@ -85,11 +85,11 @@ export default function FAQList() {
         
         <Accordion type="single" collapsible className="w-full space-y-4">
           {faqs.map((faq, index) => (
-            <AccordionItem key={index} value={`item-${index}`} className="border border-gray-200 rounded-lg px-4">
-              <AccordionTrigger className="text-lg font-semibold hover:text-[#8dc63f] data-[state=open]:text-[#8dc63f] text-left">
+            <AccordionItem key={index} value={`item-${index}`} className="border-none">
+              <AccordionTrigger className="text-lg font-semibold text-white bg-[#8dc63f] px-6 py-4 rounded-t-lg hover:bg-[#7ab135] data-[state=open]:bg-[#7ab135] text-left hover:no-underline [&>svg]:text-white">
                 {faq.question}
               </AccordionTrigger>
-              <AccordionContent className="text-gray-600 leading-relaxed pt-2 pb-4">
+              <AccordionContent className="text-gray-600 leading-relaxed p-6 bg-gray-50 border border-t-0 border-gray-200 rounded-b-lg">
                 {faq.answer}
               </AccordionContent>
             </AccordionItem>
