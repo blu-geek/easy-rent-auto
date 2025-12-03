@@ -3,6 +3,8 @@ import HeroCarousel from "@/components/HeroCarousel";
 import ReservationForm from "@/components/ReservationForm";
 import BenefitsList from "@/components/BenefitsList";
 import VehicleFleet from "@/components/VehicleFleet";
+import FAQList from "@/components/FAQList";
+import Map from "@/components/Map";
 
 export default function Home() {
   return (
@@ -34,7 +36,15 @@ export default function Home() {
         <VehicleFleet />
       </section>
 
-      {/* Map/Location placeholder could go here but keeping it simple as per request */}
+      {/* FAQ Section */}
+      <section>
+        <FAQList />
+      </section>
+
+      {/* Map Section */}
+      <section>
+        <Map />
+      </section>
       
     </div>
   );
