@@ -5,6 +5,8 @@ import BenefitsList from "@/components/BenefitsList";
 import VehicleFleet from "@/components/VehicleFleet";
 import FAQList from "@/components/FAQList";
 import Map from "@/components/Map";
+import AboutSection from "@/components/AboutSection";
+import GoogleReviews from "@/components/GoogleReviews";
 
 export default function Home() {
   return (
@@ -31,9 +33,19 @@ export default function Home() {
         <BenefitsList />
       </section>
 
+      {/* About Section with Video */}
+      <section>
+        <AboutSection />
+      </section>
+
       {/* Vehicle Fleet Section */}
       <section>
         <VehicleFleet />
+      </section>
+
+      {/* Reviews Section */}
+      <section>
+        <GoogleReviews />
       </section>
 
       {/* FAQ Section */}

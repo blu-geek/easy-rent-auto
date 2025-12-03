@@ -74,26 +74,39 @@ const faqs = [
 ];
 
 export default function FAQList() {
+  const midPoint = Math.ceil(faqs.length / 2);
+  const leftColumnFaqs = faqs.slice(0, midPoint);
+  const rightColumnFaqs = faqs.slice(midPoint);
+
+  const renderFaqItem = (faq, index, offset = 0) => (
+    <AccordionItem key={index} value={`item-${index + offset}`} className="border-none mb-4">
+      <AccordionTrigger className="text-lg font-semibold text-white bg-[#8dc63f] px-6 py-4 rounded-t-lg hover:bg-[#7ab135] data-[state=open]:bg-[#7ab135] text-left hover:no-underline [&>svg]:text-white">
+        {faq.question}
+      </AccordionTrigger>
+      <AccordionContent className="text-gray-600 leading-relaxed p-6 bg-gray-50 border border-t-0 border-gray-200 rounded-b-lg">
+        {faq.answer}
+      </AccordionContent>
+    </AccordionItem>
+  );
+
   return (
     <div className="bg-white py-16">
-      <div className="container mx-auto px-4 max-w-3xl">
+      <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-2">FAQ</h2>
           <p className="text-xl text-gray-500">Everything You've Always Wanted To Know About Easy Rent Auto!</p>
           <div className="w-24 h-1 bg-[#8dc63f] mx-auto mt-4"></div>
         </div>
         
-        <Accordion type="single" collapsible className="w-full space-y-4">
-          {faqs.map((faq, index) => (
-            <AccordionItem key={index} value={`item-${index}`} className="border-none">
-              <AccordionTrigger className="text-lg font-semibold text-white bg-[#8dc63f] px-6 py-4 rounded-t-lg hover:bg-[#7ab135] data-[state=open]:bg-[#7ab135] text-left hover:no-underline [&>svg]:text-white">
-                {faq.question}
-              </AccordionTrigger>
-              <AccordionContent className="text-gray-600 leading-relaxed p-6 bg-gray-50 border border-t-0 border-gray-200 rounded-b-lg">
-                {faq.answer}
-              </AccordionContent>
-            </AccordionItem>
-          ))}
+        <Accordion type="single" collapsible className="w-full">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+            <div className="space-y-4">
+              {leftColumnFaqs.map((faq, index) => renderFaqItem(faq, index))}
+            </div>
+            <div className="space-y-4">
+              {rightColumnFaqs.map((faq, index) => renderFaqItem(faq, index, midPoint))}
+            </div>
+          </div>
         </Accordion>
       </div>
     </div>

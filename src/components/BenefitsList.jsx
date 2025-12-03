@@ -1,5 +1,5 @@
 import React from 'react';
-import { Check } from 'lucide-react';
+import { ThumbsUp } from 'lucide-react';
 
 const benefits = [
   "We Make Renting Easy",
@@ -57,8 +57,8 @@ export default function BenefitsList() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {benefits.map((benefit, index) => (
             <div key={index} className="flex items-start gap-3 p-2 hover:bg-white rounded-lg transition-colors duration-200">
-              <div className="mt-1 flex-shrink-0 w-5 h-5 rounded-full bg-[#8dc63f]/10 flex items-center justify-center text-[#8dc63f]">
-                <Check className="w-3 h-3" />
+              <div className="mt-1 flex-shrink-0 w-5 h-5 rounded-full flex items-center justify-center text-[#8dc63f]">
+                <ThumbsUp className="w-5 h-5 fill-current" />
               </div>
               <span className="text-gray-700 font-medium">{benefit}</span>
             </div>
