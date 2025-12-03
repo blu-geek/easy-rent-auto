@@ -44,12 +44,12 @@ export default function Home() {
       </section>
 
       {/* Reviews Section */}
-      <section>
+      <section id="reviews">
         <GoogleReviews />
       </section>
 
       {/* FAQ Section */}
-      <section>
+      <section id="faq">
         <FAQList />
       </section>
 

@@ -4,7 +4,7 @@ import { Phone, Mail, MapPin, Clock, Facebook, Twitter, Instagram } from 'lucide
 
 export default function Footer() {
   return (
-    <footer className="bg-[#222] text-white pt-16 pb-8">
+    <footer id="contact" className="bg-[#222] text-white pt-16 pb-8">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
           <div>
@@ -40,7 +40,7 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="w-5 h-5 text-[#8dc63f] flex-shrink-0" />
-                <span className="text-gray-400">info@easyrentauto.ca</span>
+                <span className="text-gray-400">rentme@easyrentautos.ca</span>
               </li>
               <li className="flex items-start gap-3">
                 <Clock className="w-5 h-5 text-[#8dc63f] mt-1 flex-shrink-0" />

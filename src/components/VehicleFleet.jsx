@@ -75,17 +75,7 @@ const vehicles = [
       { label: "Kilometer", value: "Charge @ .15¢/Km or .25¢/Km" }
     ]
   },
-  {
-    title: "Moving Vans",
-    price: "80",
-    image: "https://easyrentauto.ca/wp-content/uploads/2018/08/6.jpg",
-    features: [
-      { label: "$3/Day", value: "Glass & Tire Insurance" },
-      { label: "$15/Hour +", value: "Hire A Driver" },
-      { label: "Min Age", value: "18+ Some Conditions" },
-      { label: "Kilometer", value: "Charge @ .25¢ or .45¢/Km" }
-    ]
-  }
+
 ];
 
 export default function VehicleFleet() {

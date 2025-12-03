@@ -17,10 +17,10 @@ export default function Header() {
         <div className="hidden md:flex items-center space-x-8">
           <nav className="flex items-center space-x-6 font-medium text-gray-600">
             <Link to="/" className="hover:text-[#8dc63f] transition-colors">Home</Link>
-            <Link to="/" className="hover:text-[#8dc63f] transition-colors">Vehicles</Link>
-            <Link to="/" className="hover:text-[#8dc63f] transition-colors">Services</Link>
-            <Link to="/" className="hover:text-[#8dc63f] transition-colors">Locations</Link>
-            <Link to="/" className="hover:text-[#8dc63f] transition-colors">Contact</Link>
+            <Link to="/franchising" className="hover:text-[#8dc63f] transition-colors">Franchising</Link>
+            <Link to="/#reviews" className="hover:text-[#8dc63f] transition-colors">Reviews</Link>
+            <Link to="/#faq" className="hover:text-[#8dc63f] transition-colors">FAQ</Link>
+            <a href="#contact" className="hover:text-[#8dc63f] transition-colors">Contact</a>
           </nav>
           
           <div className="flex items-center gap-2 text-[#8dc63f] font-bold text-lg">
