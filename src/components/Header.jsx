@@ -7,9 +7,11 @@ export default function Header() {
     <header className="bg-white shadow-sm sticky top-0 z-50">
       <div className="container mx-auto px-4 h-20 flex items-center justify-between">
         <div className="flex items-center gap-2">
-          <div className="text-2xl font-bold text-gray-800">
-            <span className="text-[#8dc63f]">EASY</span>RENT<span className="font-light text-gray-400">AUTO</span>
-          </div>
+          <img 
+            src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/692f520dd71ac1b1e22d9e26/51058b495_ChatGPTImageDec2202505_53_10PM.png" 
+            alt="Easy Rent Auto" 
+            className="h-12 md:h-16 w-auto object-contain"
+          />
         </div>
 
         <div className="hidden md:flex items-center space-x-8">
