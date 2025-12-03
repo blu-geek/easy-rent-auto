@@ -34,7 +34,7 @@ export default function Home() {
       </section>
 
       {/* About Section with Video */}
-      <section>
+      <section id="about">
         <AboutSection />
       </section>
 
