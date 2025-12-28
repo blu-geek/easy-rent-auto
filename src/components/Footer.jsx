@@ -36,7 +36,7 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="w-5 h-5 text-[#8dc63f] flex-shrink-0" />
-                <span className="text-gray-400">(306) 555-0123</span>
+                <span className="text-gray-400">(639) 471-4669</span>
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="w-5 h-5 text-[#8dc63f] flex-shrink-0" />
@@ -60,8 +60,11 @@ export default function Footer() {
             </ul>
           </div>
 
-          <div>
+          <div id="easy-clean-auto">
             <h3 className="text-xl font-bold mb-6 border-l-4 border-[#8dc63f] pl-3">Easy Clean Auto</h3>
+            <p className="text-gray-400 mb-4 leading-relaxed">
+              Saskatoon's Local 100% Canadian-owned detail shop! Open 24 hrs a day!!
+            </p>
             <p className="text-gray-400">
               1201 Seventh Ave N,<br />
               Saskatoon, SK S7K 2W1

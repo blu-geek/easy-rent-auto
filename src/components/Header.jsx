@@ -24,9 +24,17 @@ export default function Header() {
             <a href="#contact" className="hover:text-[#8dc63f] transition-colors">Contact</a>
           </nav>
           
-          <div className="flex items-center gap-2 text-[#8dc63f] font-bold text-lg">
-            <Phone className="w-5 h-5" />
-            <span>(306) 242-0000</span>
+          <div className="flex items-center gap-4">
+            <div className="flex items-center gap-2 text-[#8dc63f] font-bold text-lg">
+              <Phone className="w-5 h-5" />
+              <span>(639) 471-4669</span>
+            </div>
+            <a 
+              href="#easy-clean-auto" 
+              className="text-gray-600 hover:text-[#8dc63f] transition-colors font-medium border-l border-gray-300 pl-4"
+            >
+              Easy Clean Auto
+            </a>
           </div>
         </div>
 
