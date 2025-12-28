@@ -5,21 +5,21 @@ import { ChevronLeft, ChevronRight } from 'lucide-react';
 const slides = [
   {
     title: "Saskatoon Rentals Open 24 Hours! Start Driving For Just $15 A Day!",
-    subtitle: "Some Conditions Apply, Best Google 5 Star Rated Rideshare Rental Cars In Saskatoon.",
+    subtitle: "Some Conditions Apply, Best Google 5-Star-Rated Rental Company in Saskatoon.",
     image: "https://easyrentauto.ca/wp-content/uploads/2018/10/truck-ram-1500-copy.png"
   },
   {
-    title: "Best Google 5 Star Rated Car Rental Rideshare Agency In Saskatoon!",
+    title: "Best Google 5 Star Rated and 100% Canadian !!!",
     subtitle: "Locally Owned And Operated, Open 24 Hours.",
     image: "https://easyrentauto.ca/wp-content/uploads/2018/09/2013-smart-ForTwo.png"
   },
   {
-    title: "Hmmm... No Credit Card?- No Problem! Hmmm... Just Turned 18?- No Problem!",
+    title: "Hmmm...No No Credit Card?- No Problem! Just Turned 18?-No Problem!",
     subtitle: "Out Of Country Licenses Are Also Accepted.",
     image: "https://easyrentauto.ca/wp-content/uploads/2018/09/chrysler-300-1.png"
   },
   {
-    title: "No Charge For Additional Drivers! Pet & Smoke Friendly Cars Available!",
+    title: "No Charge For Additional Drivers! Pet & Smoke Friendly Smoke-friendly rides available.",
     subtitle: "No Deposit Reservations - No Cancellation Fees.",
     image: "https://easyrentauto.ca/wp-content/uploads/2018/09/Grand-Cherokee-Limited.png"
   }
