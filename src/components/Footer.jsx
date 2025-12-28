@@ -6,7 +6,7 @@ export default function Footer() {
   return (
     <footer id="contact" className="bg-[#222] text-white pt-16 pb-8">
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
           <div>
             <h3 className="text-2xl font-bold mb-6 text-[#8dc63f]">Easy Rent Auto</h3>
             <p className="text-gray-400 mb-6 leading-relaxed">
@@ -58,6 +58,14 @@ export default function Footer() {
               <li><Link to="/" className="text-gray-400 hover:text-[#8dc63f] transition-colors">Contact</Link></li>
               <li><Link to="/" className="text-gray-400 hover:text-[#8dc63f] transition-colors">Terms & Conditions</Link></li>
             </ul>
+          </div>
+
+          <div>
+            <h3 className="text-xl font-bold mb-6 border-l-4 border-[#8dc63f] pl-3">Easy Clean Auto</h3>
+            <p className="text-gray-400">
+              1201 Seventh Ave N,<br />
+              Saskatoon, SK S7K 2W1
+            </p>
           </div>
         </div>
 
