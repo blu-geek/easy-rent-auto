@@ -82,7 +82,7 @@ const vehicles = [
   },
   {
     title: "Convertibles",
-    price: "80",
+    price: "35",
     image: "https://easyrentauto.ca/wp-content/uploads/2018/08/2.jpg",
     features: [
       { label: "$3/Day", value: "Glass & Tire Insurance" },
@@ -95,7 +95,7 @@ const vehicles = [
   },
   {
     title: "Cube Vans",
-    price: "35",
+    price: "80",
     image: "https://easyrentauto.ca/wp-content/uploads/2018/08/Pic-UP-Truck.png",
     features: [
       { label: "$3/Day", value: "Glass & Tire Insurance" },
