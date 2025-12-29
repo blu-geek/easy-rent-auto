@@ -21,11 +21,8 @@ const carOptions = [
   "Crew-Cab 4X4 Trucks Starting @ $80/Day",
   "Quad-Cab 4X4 Trucks Starting @ $80/Day",
   "Moving Vans Starting @ $80/Day",
-  "RVs Starting @ $350/Day",
   "Tow Trucks Starting @ $125 A Hour",
-  "Hire A Driver Starting @ $15 A Hour",
-  "E Scooters Starting @ $15/Day",
-  "Bicycles Starting @ $15/Day"
+  "Hire A Driver Starting @ $15 A Hour"
 ];
 
 const locations = [
@@ -33,7 +30,8 @@ const locations = [
   "Saskatoon Airport - YXE Branch",
   "1910 St. George Ave - EX Branch",
   "Sask Auto Mall - East Branch",
-  "1201 7th Ave North - Detail Shop"
+  "1201 7th Ave North - Detail Shop",
+  "My Front Doorstep"
 ];
 
 const times = Array.from({ length: 48 }, (_, i) => {

@@ -8,9 +8,9 @@ const vehicles = [
     image: "https://easyrentauto.ca/wp-content/uploads/2018/08/1.jpg",
     features: [
       { label: "$3/Day", value: "Glass & Tire Insurance" },
-      { label: "$4/Day", value: "Garmin Navigation" },
       { label: "$5/Day", value: "Roadside Assistance" },
-      { label: "$10/Day", value: "SaskTel Wi-Fi Car Hub" },
+      { label: "$10/Day", value: "$1000 Insurance Deductible" },
+      { label: "$15/Day", value: "$750 Insurance Deductible" },
       { label: "Min Age", value: "18+ Some Conditions" },
       { label: "Kilometer", value: "Charge @ .15¢/Km" }
     ]
@@ -21,8 +21,9 @@ const vehicles = [
     image: "https://easyrentauto.ca/wp-content/uploads/2019/01/Coupe.png",
     features: [
       { label: "$3/Day", value: "Glass & Tire Insurance" },
-      { label: "$10/Day", value: "SaskTel Wi-Fi Car Hub" },
+      { label: "$5/Day", value: "Roadside Assistance" },
       { label: "$10/Day", value: "$1000 Insurance Deductible" },
+      { label: "$15/Day", value: "$750 Insurance Deductible" },
       { label: "Min Age", value: "18+ Some Conditions" },
       { label: "Kilometer", value: "Charge @ .15¢/Km" }
     ]
@@ -34,9 +35,10 @@ const vehicles = [
     features: [
       { label: "$3/Day", value: "Glass & Tire Insurance" },
       { label: "$5/Day", value: "Roadside Assistance" },
-      { label: "$10/Day", value: "SaskTel Wi-Fi Car Hub" },
+      { label: "$10/Day", value: "$1000 Insurance Deductible" },
+      { label: "$15/Day", value: "$750 Insurance Deductible" },
       { label: "Min Age", value: "18+ Some Conditions" },
-      { label: "Kilometer", value: "Charge @ .15 ¢/Km or . 25 ¢/Km" }
+      { label: "Kilometer", value: "Charge @ .15¢/Km" }
     ]
   },
   {
@@ -46,9 +48,10 @@ const vehicles = [
     features: [
       { label: "$3/Day", value: "Glass & Tire Insurance" },
       { label: "$5/Day", value: "Roadside Assistance" },
+      { label: "$10/Day", value: "$1000 Insurance Deductible" },
       { label: "$15/Day", value: "$750 Insurance Deductible" },
       { label: "Min Age", value: "18+ Some Conditions" },
-      { label: "Kilometer", value: "Charge @ .15¢/Km or .25¢/Km" }
+      { label: "Kilometer", value: "Charge @ .15¢/Km" }
     ]
   },
   {
@@ -57,8 +60,9 @@ const vehicles = [
     image: "https://easyrentauto.ca/wp-content/uploads/2019/01/minvan.png",
     features: [
       { label: "$3/Day", value: "Glass & Tire Insurance" },
-      { label: "$4/Day", value: "Garmin Navigation" },
       { label: "$5/Day", value: "Roadside Assistance" },
+      { label: "$10/Day", value: "$1000 Insurance Deductible" },
+      { label: "$15/Day", value: "$750 Insurance Deductible" },
       { label: "Min Age", value: "18+ Some Conditions" },
       { label: "Kilometer", value: "Charge @ .15¢/Km" }
     ]
@@ -70,12 +74,53 @@ const vehicles = [
     features: [
       { label: "$3/Day", value: "Glass & Tire Insurance" },
       { label: "$5/Day", value: "Roadside Assistance" },
-      { label: "$10/Day", value: "SaskTel Wi-Fi Car Hub" },
+      { label: "$10/Day", value: "$1000 Insurance Deductible" },
+      { label: "$15/Day", value: "$750 Insurance Deductible" },
       { label: "Min Age", value: "18+ Some Conditions" },
-      { label: "Kilometer", value: "Charge @ .15¢/Km or .25¢/Km" }
+      { label: "Kilometer", value: "Charge @ .25¢ to .45¢/Km" }
     ]
   },
-
+  {
+    title: "Convertibles",
+    price: "80",
+    image: "https://easyrentauto.ca/wp-content/uploads/2018/08/2.jpg",
+    features: [
+      { label: "$3/Day", value: "Glass & Tire Insurance" },
+      { label: "$5/Day", value: "Roadside Assistance" },
+      { label: "$10/Day", value: "$1000 Insurance Deductible" },
+      { label: "$15/Day", value: "$750 Insurance Deductible" },
+      { label: "Min Age", value: "18+ Some Conditions" },
+      { label: "Kilometer", value: "Charge @ .25¢ to .55¢/Km" }
+    ]
+  },
+  {
+    title: "Cube Vans",
+    price: "35",
+    image: "https://easyrentauto.ca/wp-content/uploads/2018/08/Pic-UP-Truck.png",
+    features: [
+      { label: "$3/Day", value: "Glass & Tire Insurance" },
+      { label: "$5/Day", value: "Roadside Assistance" },
+      { label: "$10/Day", value: "$1000 Insurance Deductible" },
+      { label: "$15/Day", value: "$750 Insurance Deductible" },
+      { label: "Min Age", value: "18+ Some Conditions" },
+      { label: "Kilometer", value: "Charge @ .25¢ to .55¢/Km" }
+    ]
+  },
+  {
+    title: "Rent-A-Driver",
+    price: "15/Hour",
+    image: "https://easyrentauto.ca/wp-content/uploads/2018/08/1.jpg",
+    features: [
+      { label: "$15/Hour", value: "9:00am - 5:00PM" },
+      { label: "$20/Hour", value: "5:00pm - 11:00pm" },
+      { label: "$25/Hour", value: "11:00pm - 1:00am" },
+      { label: "$30/Hour", value: "1:00am - 3:00am" },
+      { label: "$35/Hour", value: "3:00am - 8:00am" },
+      { label: "$150/Day", value: "Daily Rate / Tour Rate +" },
+      { label: "Conditions", value: "Pet Friendly - Non Smoking" },
+      { label: "Conditions", value: "Pet Friendly - Smoking Allowed" }
+    ]
+  }
 ];
 
 export default function VehicleFleet() {

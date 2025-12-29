@@ -27,13 +27,12 @@ export default function AboutSection() {
           </div>
           
           <p className="leading-relaxed mb-6">
-            We Make Renting A Car Easy! Cheap Car Rentals Starting At Just $15 A Day! 
+            We Make Renting A Car Easy! Cheap Car Rentals Starting At Just $15 A Day! Some Conditions Apply. 
             Open For Car Rentals 24/7, SGI On Scene Rentals, No Credit Card No Problem, 
             No Charge For Additional Drivers, Airport Pick-up And Drop-off, Drivers Under 19 Are Welcome, 
             International Driver's Welcome, Discount Unlimited Kilometer Packages Available, 
             Cheap Short Term & Long Term Car Rental Options, Indoor And Outdoor Storage Options, 
-            Mp3 Cords And Phone Chargers Available, Navigation Units Available, Trailer Hitches Available, 
-            Moving Equipment Available, Tents And Camping Equipment Available, Bikes With Racks Also Available.
+            Mp3 Cords And Phone Chargers Available.
           </p>
 
           <p className="leading-relaxed mb-6">
