@@ -26,12 +26,12 @@ const carOptions = [
 ];
 
 const locations = [
+  "My Front Doorstep",
   "901 1st Ave North - Main Branch",
   "Saskatoon Airport - YXE Branch",
   "1910 St. George Ave - EX Branch",
   "Sask Auto Mall - East Branch",
-  "1201 7th Ave North - Detail Shop",
-  "My Front Doorstep"
+  "1201 7th Ave North - Detail Shop"
 ];
 
 const times = Array.from({ length: 48 }, (_, i) => {
@@ -204,14 +204,13 @@ export default function ReservationForm() {
               <SelectItem value="Amex">American Express</SelectItem>
               <SelectItem value="Debit">Debit</SelectItem>
               <SelectItem value="Cash">Cash</SelectItem>
-              <SelectItem value="None">No Credit Card</SelectItem>
             </SelectContent>
           </Select>
         </div>
 
         <Button 
           type="submit" 
-          className="w-full bg-[#8dc63f] hover:bg-[#7ab135] text-white font-bold py-3 text-lg rounded-md shadow-md transition-all transform active:scale-95"
+          className="w-full bg-[#32CD32] hover:bg-[#2eb82e] text-white font-bold py-3 text-lg rounded-md shadow-md transition-all transform active:scale-95"
           disabled={mutation.isPending}
         >
           {mutation.isPending ? "Processing..." : "RESERVE NOW"}

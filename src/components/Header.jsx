@@ -16,22 +16,22 @@ export default function Header() {
 
         <div className="hidden md:flex items-center space-x-8">
           <nav className="flex items-center space-x-6 font-medium text-gray-600">
-            <a href="/" className="hover:text-[#8dc63f] transition-colors">Home</a>
-            <Link to="/franchising" className="hover:text-[#8dc63f] transition-colors">Franchising</Link>
-            <a href="/#about" className="hover:text-[#8dc63f] transition-colors">About Us</a>
-            <a href="/#reviews" className="hover:text-[#8dc63f] transition-colors">Reviews</a>
-            <a href="/#faq" className="hover:text-[#8dc63f] transition-colors">FAQ</a>
-            <a href="#contact" className="hover:text-[#8dc63f] transition-colors">Contact</a>
+            <a href="/" className="hover:text-[#32CD32] transition-colors">Home</a>
+            <Link to="/franchising" className="hover:text-[#32CD32] transition-colors">Franchising</Link>
+            <a href="/#about" className="hover:text-[#32CD32] transition-colors">About Us</a>
+            <a href="/#reviews" className="hover:text-[#32CD32] transition-colors">Reviews</a>
+            <a href="/#faq" className="hover:text-[#32CD32] transition-colors">FAQ</a>
+            <a href="#contact" className="hover:text-[#32CD32] transition-colors">Contact</a>
           </nav>
           
           <div className="flex items-center gap-4">
-            <div className="flex items-center gap-2 text-[#8dc63f] font-bold text-lg">
+            <div className="flex items-center gap-2 text-[#32CD32] font-bold text-lg">
               <Phone className="w-5 h-5" />
               <span>(639) 471-4669</span>
             </div>
             <a 
               href="#easy-clean-auto" 
-              className="text-gray-600 hover:text-[#8dc63f] transition-colors font-medium border-l border-gray-300 pl-4"
+              className="text-gray-600 hover:text-[#32CD32] transition-colors font-medium border-l border-gray-300 pl-4"
             >
               Easy Clean Auto
             </a>

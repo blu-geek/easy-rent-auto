@@ -4,8 +4,8 @@ import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 const slides = [
   {
-    title: "Saskatoon Rentals Open 24 Hours! Start Driving For Just $15 A Day!",
-    subtitle: "Some Conditions Apply, Best Google 5-Star-Rated Rental Company in Saskatoon.",
+    title: "Saskatoon Rentals Open 24 Hours!",
+    subtitle: "Start Driving For Just $15 A Day!",
     image: "https://easyrentauto.ca/wp-content/uploads/2018/10/truck-ram-1500-copy.png"
   },
   {
@@ -14,13 +14,13 @@ const slides = [
     image: "https://easyrentauto.ca/wp-content/uploads/2018/09/2013-smart-ForTwo.png"
   },
   {
-    title: "Hmmm...No No Credit Card?- No Problem! Just Turned 18?-No Problem!",
-    subtitle: "Out Of Country Licenses Are Also Accepted.",
+    title: "Hmmm...No Credit Card?- No Problem!",
+    subtitle: "Just Turned 18?-No Problem! Out Of Country Licenses Are Also Accepted.",
     image: "https://easyrentauto.ca/wp-content/uploads/2018/09/chrysler-300-1.png"
   },
   {
-    title: "No Charge For Additional Drivers! Pet & Smoke Friendly Smoke-friendly rides available.",
-    subtitle: "No Deposit Reservations - No Cancellation Fees.",
+    title: "No Charge For Additional Drivers!",
+    subtitle: "Pet & Smoke-Friendly Rides Available. No Deposit Reservations - No Cancellation Fees.",
     image: "https://easyrentauto.ca/wp-content/uploads/2018/09/Grand-Cherokee-Limited.png"
   }
 ];

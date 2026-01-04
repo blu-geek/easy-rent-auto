@@ -47,7 +47,7 @@ export default function GoogleReviews() {
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold text-gray-600 mb-2">Google Reviews</h2>
-          <div className="w-24 h-1 bg-[#8dc63f] mx-auto mt-4"></div>
+          <div className="w-24 h-1 bg-[#32CD32] mx-auto mt-4"></div>
         </div>
 
         {/* Desktop Layout: Show all 3 (or grid) / Mobile: Carousel */}

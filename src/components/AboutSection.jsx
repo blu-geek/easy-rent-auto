@@ -31,8 +31,7 @@ export default function AboutSection() {
             Open For Car Rentals 24/7, SGI On Scene Rentals, No Credit Card No Problem, 
             No Charge For Additional Drivers, Airport Pick-up And Drop-off, Drivers Under 19 Are Welcome, 
             International Driver's Welcome, Discount Unlimited Kilometer Packages Available, 
-            Cheap Short Term & Long Term Car Rental Options, Indoor And Outdoor Storage Options, 
-            Mp3 Cords And Phone Chargers Available.
+            Cheap Short Term & Long Term Car Rental Options, Indoor And Outdoor Storage Options.
           </p>
 
           <p className="leading-relaxed mb-6">
