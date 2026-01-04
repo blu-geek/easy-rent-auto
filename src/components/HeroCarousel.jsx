@@ -9,7 +9,7 @@ const slides = [
     image: "https://easyrentauto.ca/wp-content/uploads/2018/10/truck-ram-1500-copy.png"
   },
   {
-    title: "Best Google 5 Star Rated and 100% Canadian !!!",
+    title: "Best Google 5 Star Rated and 100% Canadian!!!",
     subtitle: "Locally Owned And Operated, Open 24 Hours.",
     image: "https://easyrentauto.ca/wp-content/uploads/2018/09/2013-smart-ForTwo.png"
   },
@@ -50,7 +50,7 @@ export default function HeroCarousel() {
             transition={{ duration: 0.5 }}
             className="flex flex-col items-center text-center px-4 max-w-4xl mx-auto"
           >
-            <h1 className="text-2xl md:text-4xl font-bold text-white mb-2 shadow-sm">
+            <h1 className="text-2xl md:text-4xl font-bold text-white mb-2 shadow-sm whitespace-nowrap">
               {slides[current].title}
             </h1>
             <p className="text-lg md:text-xl text-white/90 mb-8 font-light shadow-sm">
