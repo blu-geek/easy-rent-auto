@@ -4,23 +4,23 @@ import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 const slides = [
   {
-    title: "Saskatoon Rentals Open 24 Hours!",
-    subtitle: "Start Driving For Just $15 A Day!",
+    title: "SASKATOON RENTALS OPEN 24 HOURS!",
+    subtitle: "Start driving for just $15 a day!",
     image: "https://easyrentauto.ca/wp-content/uploads/2018/10/truck-ram-1500-copy.png"
   },
   {
-    title: "Best Google 5 Star Rated and 100% Canadian!!!",
-    subtitle: "Locally Owned And Operated, Open 24 Hours.",
+    title: "BEST GOOGLE 5 STAR RATED AND 100% CANADIAN!!!",
+    subtitle: "Locally owned and operated, open 24 hours.",
     image: "https://easyrentauto.ca/wp-content/uploads/2018/09/2013-smart-ForTwo.png"
   },
   {
-    title: "Hmmm...No Credit Card?- No Problem!",
-    subtitle: "Just Turned 18?-No Problem! Out Of Country Licenses Are Also Accepted.",
+    title: "HMMM...NO CREDIT CARD?- NO PROBLEM!",
+    subtitle: "Just turned 18?- No problem! Out of country licenses are also accepted.",
     image: "https://easyrentauto.ca/wp-content/uploads/2018/09/chrysler-300-1.png"
   },
   {
-    title: "No Charge For Additional Drivers!",
-    subtitle: "Pet & Smoke-Friendly Rides Available. No Deposit Reservations - No Cancellation Fees.",
+    title: "NO CHARGE FOR ADDITIONAL DRIVERS! PET & SMOKE FRIENDLY CARS AVAILABLE!",
+    subtitle: "No deposit reservations - No cancellation fees.",
     image: "https://easyrentauto.ca/wp-content/uploads/2018/09/Grand-Cherokee-Limited.png"
   }
 ];
@@ -50,10 +50,10 @@ export default function HeroCarousel() {
             transition={{ duration: 0.5 }}
             className="flex flex-col items-center text-center px-4 max-w-4xl mx-auto"
           >
-            <h1 className="text-2xl md:text-4xl font-bold text-white mb-2 shadow-sm whitespace-nowrap">
+            <h1 className="text-2xl md:text-4xl font-extrabold text-white mb-2 shadow-sm">
               {slides[current].title}
             </h1>
-            <p className="text-lg md:text-xl text-white/90 mb-8 font-light shadow-sm">
+            <p className="text-lg md:text-2xl text-white mb-8 font-normal shadow-sm">
               {slides[current].subtitle}
             </p>
             <div className="relative w-full max-w-2xl h-48 md:h-64">
