@@ -1,11 +1,11 @@
-import Home from './pages/Home';
 import Franchising from './pages/Franchising';
+import Home from './pages/Home';
 import __Layout from './Layout.jsx';
 
 
 export const PAGES = {
-    "Home": Home,
     "Franchising": Franchising,
+    "Home": Home,
 }
 
 export const pagesConfig = {
