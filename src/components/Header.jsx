@@ -9,7 +9,7 @@ export default function Header() {
       <div className="container mx-auto px-4 h-20 flex items-center justify-between">
         <div className="flex items-center gap-2">
           <img 
-            src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/692f520dd71ac1b1e22d9e26/f60c62498_ERALogo.pdf" 
+            src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/692f520dd71ac1b1e22d9e26/d5f04da44_Screenshot2026-01-04at192315.png" 
             alt="Easy Rent Auto" 
             className="h-12 md:h-16 w-auto object-contain"
           />
