@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Phone } from 'lucide-react';
+import { createPageUrl } from '@/utils';
 
 export default function Header() {
   return (
@@ -8,7 +9,7 @@ export default function Header() {
       <div className="container mx-auto px-4 h-20 flex items-center justify-between">
         <div className="flex items-center gap-2">
           <img 
-            src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/692f520dd71ac1b1e22d9e26/51058b495_ChatGPTImageDec2202505_53_10PM.png" 
+            src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/692f520dd71ac1b1e22d9e26/f60c62498_ERALogo.pdf" 
             alt="Easy Rent Auto" 
             className="h-12 md:h-16 w-auto object-contain"
           />
@@ -16,8 +17,8 @@ export default function Header() {
 
         <div className="hidden md:flex items-center space-x-8">
           <nav className="flex items-center space-x-6 font-medium text-gray-600">
-            <a href="/" className="hover:text-[#3ca972] transition-colors">Home</a>
-            <Link to="/franchising" className="hover:text-[#3ca972] transition-colors">Franchising</Link>
+            <Link to={createPageUrl('Home')} className="hover:text-[#3ca972] transition-colors">Home</Link>
+            <Link to={createPageUrl('Franchising')} className="hover:text-[#3ca972] transition-colors">Franchising</Link>
             <a href="/#about" className="hover:text-[#3ca972] transition-colors">About Us</a>
             <a href="/#reviews" className="hover:text-[#3ca972] transition-colors">Reviews</a>
             <a href="/#faq" className="hover:text-[#3ca972] transition-colors">FAQ</a>
