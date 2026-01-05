@@ -43,7 +43,7 @@ export default function GoogleReviews() {
   }, []);
 
   return (
-    <div className="bg-gray-50 py-16 relative overflow-hidden">
+    <div id="reviews" className="bg-gray-50 py-16 relative overflow-hidden">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold text-gray-600 mb-2">Google Reviews</h2>
