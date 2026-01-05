@@ -80,7 +80,7 @@ export default function FAQList() {
 
   const renderFaqItem = (faq, index, offset = 0) => (
     <AccordionItem key={index} value={`item-${index + offset}`} className="border-none mb-4">
-      <AccordionTrigger className="text-lg font-semibold text-white bg-[#8dc63f] px-6 py-4 rounded-t-lg hover:bg-[#7ab135] data-[state=open]:bg-[#7ab135] text-left hover:no-underline [&>svg]:text-white">
+      <AccordionTrigger className="text-lg font-semibold text-white bg-[#3ca972] px-6 py-4 rounded-t-lg hover:bg-[#2d8a5a] data-[state=open]:bg-[#2d8a5a] text-left hover:no-underline [&>svg]:text-white">
         {faq.question}
       </AccordionTrigger>
       <AccordionContent className="text-gray-600 leading-relaxed p-6 bg-gray-50 border border-t-0 border-gray-200 rounded-b-lg">
@@ -95,7 +95,7 @@ export default function FAQList() {
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-2">FAQ</h2>
           <p className="text-xl text-gray-500">Everything You've Always Wanted To Know About Easy Rent Auto!</p>
-          <div className="w-24 h-1 bg-[#8dc63f] mx-auto mt-4"></div>
+          <div className="w-24 h-1 bg-[#3ca972] mx-auto mt-4"></div>
         </div>
         
         <Accordion type="single" collapsible className="w-full">
