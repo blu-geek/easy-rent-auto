@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <div className="flex flex-col">
       {/* Hero Section */}
-      <section className="relative bg-[#4A8367] border-b border-[#8dc63f]">
+      <section className="relative bg-[#3ca972] border-b border-[#8dc63f]">
         <div className="container mx-auto px-4 py-8 md:py-12">
           <div className="flex flex-col lg:flex-row gap-8 items-start">
             {/* Carousel takes up more space on large screens */}

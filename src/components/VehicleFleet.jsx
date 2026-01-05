@@ -135,7 +135,7 @@ export default function VehicleFleet() {
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-2">Our Rental Car Lineup</h2>
           <p className="text-xl text-gray-500">Includes Just The Right Car Rental For You!</p>
-          <div className="w-24 h-1 bg-[#4A8367] mx-auto mt-4"></div>
+          <div className="w-24 h-1 bg-[#3ca972] mx-auto mt-4"></div>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -147,7 +147,7 @@ export default function VehicleFleet() {
                   alt={car.title}
                   className="max-h-full max-w-full object-contain"
                 />
-                <div className="absolute top-4 right-4 bg-[#4A8367] text-white px-3 py-1 rounded-full font-bold text-sm">
+                <div className="absolute top-4 right-4 bg-[#3ca972] text-white px-3 py-1 rounded-full font-bold text-sm">
                   From ${car.price}/Day
                 </div>
               </div>
@@ -170,7 +170,7 @@ export default function VehicleFleet() {
 
                 <Button 
                   onClick={scrollToForm}
-                  className="w-full mt-6 bg-[#333] hover:bg-[#4A8367] text-white font-bold py-2 rounded transition-colors"
+                  className="w-full mt-6 bg-[#169a5a] hover:bg-[#0f7d48] text-white font-bold py-2 rounded transition-colors"
                 >
                   RESERVE NOW
                 </Button>
