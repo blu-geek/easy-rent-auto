@@ -49,8 +49,15 @@ export default function GoogleReviews() {
           <div className="w-24 h-1 bg-[#3ca972] mx-auto mt-4"></div>
         </div>
 
-        {/* Automated Carousel for all screens */}
-        <div className="relative h-[400px] max-w-4xl mx-auto">
+        {/* Desktop: 3 column grid, Mobile: Automated Carousel */}
+        <div className="hidden md:grid grid-cols-3 gap-6 max-w-6xl mx-auto">
+          {reviews.map((review, idx) => (
+            <ReviewCard key={idx} review={review} />
+          ))}
+        </div>
+
+        {/* Mobile Carousel */}
+        <div className="md:hidden relative h-[320px] max-w-sm mx-auto">
            <AnimatePresence mode='wait'>
             <motion.div
               key={currentIndex}
@@ -106,37 +113,35 @@ export default function GoogleReviews() {
 
 function ReviewCard({ review }) {
   return (
-    <div className="bg-white p-6 rounded-lg shadow-md border border-gray-100 h-full flex flex-col">
-      <div className="flex gap-1 mb-3 text-orange-500">
+    <div className="bg-white p-4 rounded-lg shadow-sm border border-gray-200 h-full flex flex-col">
+      <div className="flex gap-0.5 mb-3 text-orange-500">
         {[...Array(5)].map((_, i) => (
-           <Star key={i} className="w-4 h-4 fill-current" />
+           <Star key={i} className="w-3.5 h-3.5 fill-current" />
         ))}
       </div>
-      <div className="flex-grow">
-         <p className="text-gray-600 text-sm leading-relaxed relative pl-4">
-           <Quote className="w-6 h-6 text-gray-200 absolute -left-1 -top-2 transform -scale-x-100" />
-           {review.text}
+      <div className="flex-grow mb-4">
+         <p className="text-gray-600 text-xs leading-relaxed">
+           "{review.text}"
          </p>
       </div>
       
-      <div className="mt-4 pt-4 border-t border-gray-50 flex items-center justify-between">
-        <div className="flex items-center gap-3">
+      <div className="flex items-center justify-between">
+        <div className="flex items-center gap-2">
           {review.initial ? (
-            <div className={`w-10 h-10 rounded-full ${review.color || 'bg-gray-500'} flex items-center justify-center text-white font-bold`}>
+            <div className={`w-8 h-8 rounded-full ${review.color || 'bg-gray-500'} flex items-center justify-center text-white font-bold text-sm`}>
               {review.initial}
             </div>
           ) : (
-             <div className="w-10 h-10 rounded-full bg-gray-200 overflow-hidden">
-               {/* Placeholder for avatar since we don't have real URLs for them all */}
+             <div className="w-8 h-8 rounded-full bg-gray-200 overflow-hidden flex-shrink-0">
                <img src={`https://ui-avatars.com/api/?name=${review.name}&background=random`} alt={review.name} />
              </div>
           )}
           <div className="flex flex-col">
-            <span className="text-sm font-bold text-blue-600">{review.name}</span>
-            <span className="text-xs text-gray-400">{review.time}</span>
+            <span className="text-xs font-semibold text-blue-600">{review.name}</span>
+            <span className="text-[10px] text-gray-400">{review.time}</span>
           </div>
         </div>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/1200px-Google_%22G%22_logo.svg.png" alt="Google" className="w-5 h-5 opacity-80" />
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/1200px-Google_%22G%22_logo.svg.png" alt="Google" className="w-4 h-4 opacity-70 flex-shrink-0" />
       </div>
     </div>
   );
