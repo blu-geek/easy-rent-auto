@@ -27,12 +27,20 @@ const carOptions = [
 
 const locations = [
   "My Front Doorstep",
-  "901 1st Ave North - Main Branch",
   "Saskatoon Airport - YXE Branch",
-  "1910 St. George Ave - EX Branch",
   "Sask Auto Mall - East Branch",
-  "1201 7th Ave North - Detail Shop"
+  "1201 7th Ave North - Detail Shop",
+  "Saskatoon Airport",
+  "Hotel",
+  "Hospital",
+  "SGI Claims Center",
+  "Garage",
+  "Body Shop",
+  "Train Station",
+  "Rider Bus Station"
 ];
+
+const nonSpecificLocations = ["Hotel", "Hospital", "SGI Claims Center", "Garage", "Body Shop"];
 
 const times = Array.from({ length: 48 }, (_, i) => {
   const hour = Math.floor(i / 2);
@@ -46,7 +54,9 @@ export default function ReservationForm() {
   const [formData, setFormData] = useState({
     car_selection: "",
     pickup_location: "",
+    pickup_location_address: "",
     dropoff_location: "",
+    dropoff_location_address: "",
     pickup_date: "",
     pickup_time: "12:00 PM",
     dropoff_date: "",
@@ -61,7 +71,9 @@ export default function ReservationForm() {
       setFormData({
         car_selection: "",
         pickup_location: "",
+        pickup_location_address: "",
         dropoff_location: "",
+        dropoff_location_address: "",
         pickup_date: "",
         pickup_time: "12:00 PM",
         dropoff_date: "",
@@ -105,7 +117,7 @@ export default function ReservationForm() {
             <MapPin className="absolute left-3 top-3 h-5 w-5 text-gray-400" />
             <Select 
               value={formData.pickup_location}
-              onValueChange={(val) => setFormData({...formData, pickup_location: val})}
+              onValueChange={(val) => setFormData({...formData, pickup_location: val, pickup_location_address: ""})}
             >
               <SelectTrigger className="w-full pl-10 bg-gray-50 border-gray-300 text-gray-700">
                 <SelectValue placeholder="Pick-up Location" />
@@ -117,6 +129,14 @@ export default function ReservationForm() {
               </SelectContent>
             </Select>
           </div>
+          {nonSpecificLocations.includes(formData.pickup_location) && (
+            <Input 
+              placeholder="Enter specific address"
+              value={formData.pickup_location_address}
+              onChange={(e) => setFormData({...formData, pickup_location_address: e.target.value})}
+              className="bg-gray-50 border-gray-300"
+            />
+          )}
         </div>
 
         <div className="space-y-2">
@@ -124,7 +144,7 @@ export default function ReservationForm() {
             <MapPin className="absolute left-3 top-3 h-5 w-5 text-gray-400" />
             <Select 
               value={formData.dropoff_location}
-              onValueChange={(val) => setFormData({...formData, dropoff_location: val})}
+              onValueChange={(val) => setFormData({...formData, dropoff_location: val, dropoff_location_address: ""})}
             >
               <SelectTrigger className="w-full pl-10 bg-gray-50 border-gray-300 text-gray-700">
                 <SelectValue placeholder="Drop-off Location" />
@@ -136,6 +156,14 @@ export default function ReservationForm() {
               </SelectContent>
             </Select>
           </div>
+          {nonSpecificLocations.includes(formData.dropoff_location) && (
+            <Input 
+              placeholder="Enter specific address"
+              value={formData.dropoff_location_address}
+              onChange={(e) => setFormData({...formData, dropoff_location_address: e.target.value})}
+              className="bg-gray-50 border-gray-300"
+            />
+          )}
         </div>
 
         <div className="grid grid-cols-2 gap-2">
