@@ -4,52 +4,26 @@ import { Star, Quote } from 'lucide-react';
 
 const reviews = [
   {
-    name: "Melissa P",
-    time: "2 months ago",
+    name: "Roy Feschuk",
+    time: "a year ago",
     rating: 5,
-    text: "Absolutely amazing service! The team went above and beyond to help me get a rental car on short notice. Very professional and friendly. Best car rental experience I've had in Saskatoon!",
-    initial: "M",
-    color: "bg-purple-600"
+    text: "My son is an absolute car buff, so for grad day James set us up with this red Mercedes convertible! My son was pleasantly shocked and excited to get to use this for his grad day. James, thanks for the sweet ride for the day!",
+    avatar: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/692f520dd71ac1b1e22d9e26/c249ad7df_Screenshot2026-01-05at224304.png"
   },
   {
-    name: "David Chen",
-    time: "3 months ago",
+    name: "Gerald",
+    time: "a year ago",
     rating: 5,
-    text: "Great prices and excellent customer service. I've rented from them multiple times now and they never disappoint. The 24-hour availability is a lifesaver. Highly recommend Easy Rent Auto!",
-    initial: "D",
-    color: "bg-blue-600"
+    text: "Great service good people ! I'd go back there again. They preform a great service when y need a vehicle. We'll done !",
+    initial: "G",
+    color: "bg-teal-700"
   },
   {
-    name: "Sarah Johnson",
-    time: "4 months ago",
+    name: "Shaan Kahlon",
+    time: "a year ago",
     rating: 5,
-    text: "Super convenient and affordable! No hidden fees, transparent pricing, and the staff is incredibly helpful. They made the whole rental process stress-free. Will definitely use them again.",
-    initial: "S",
-    color: "bg-pink-600"
-  },
-  {
-    name: "Mike Thompson",
-    time: "5 months ago",
-    rating: 5,
-    text: "Outstanding service from start to finish. The vehicle was clean and reliable. Appreciate that they accept debit and don't require a credit card. Best rental company in Saskatoon!",
-    initial: "M",
-    color: "bg-green-600"
-  },
-  {
-    name: "Emma Wilson",
-    time: "6 months ago",
-    rating: 5,
-    text: "I was impressed by how easy the process was. They picked me up at the airport and had everything ready. The rates are unbeatable and the service is top-notch. Couldn't ask for more!",
-    initial: "E",
-    color: "bg-indigo-600"
-  },
-  {
-    name: "James Rodriguez",
-    time: "7 months ago",
-    rating: 5,
-    text: "Rented a truck for moving and it was perfect. Fair pricing with no surprises. The team was accommodating with my schedule. This is the only place I'll rent from in Saskatoon now.",
-    initial: "J",
-    color: "bg-orange-600"
+    text: "Second time renting from the guy !! Most helpful guy in the City periodWill literally come and pick you up at airport. Process is simple and fast. Will recommend 100%10/10 services. People posting bad reviews just didnt plan in advance lol.",
+    avatar: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/692f520dd71ac1b1e22d9e26/c249ad7df_Screenshot2026-01-05at224304.png"
   }
 ];
 
