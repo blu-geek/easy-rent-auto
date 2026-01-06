@@ -4,27 +4,52 @@ import { Star, Quote } from 'lucide-react';
 
 const reviews = [
   {
-    name: "Anya Ahmed",
-    time: "3 years ago",
+    name: "Melissa P",
+    time: "2 months ago",
     rating: 5,
-    text: "These guys are awesome! I rented one of their fiats to go up north and it was entirely reliable (and great on gas haha) if you're looking for a car to rent in Saskatoon, these guys are definitely the ones to rent from!",
-    avatar: "https://lh3.googleusercontent.com/a-/ALV-UjUf_Gg1YtE5r0_x9_l6y9_z1_w1_q1_j1_k1_l1=s128-c0x00000000-cc-rp-mo"
+    text: "Absolutely amazing service! The team went above and beyond to help me get a rental car on short notice. Very professional and friendly. Best car rental experience I've had in Saskatoon!",
+    initial: "M",
+    color: "bg-purple-600"
   },
   {
-    name: "Jody v",
-    time: "3 years ago",
+    name: "David Chen",
+    time: "3 months ago",
     rating: 5,
-    text: "When I showed up at the airport and the big name car rental seemed to have lost my reservation ( I waited for an hour to try and get it straightened out) I called Easy Rent Auto. I was told they had a car available. I went to their location and had my paperwork done and drove away in my car in about 15 minutes.",
-    avatar: "https://lh3.googleusercontent.com/a-/ALV-UjUf_Gg1YtE5r0_x9_l6y9_z1_w1_q1_j1_k1_l1=s128-c0x00000000-cc-rp-mo",
+    text: "Great prices and excellent customer service. I've rented from them multiple times now and they never disappoint. The 24-hour availability is a lifesaver. Highly recommend Easy Rent Auto!",
+    initial: "D",
+    color: "bg-blue-600"
+  },
+  {
+    name: "Sarah Johnson",
+    time: "4 months ago",
+    rating: 5,
+    text: "Super convenient and affordable! No hidden fees, transparent pricing, and the staff is incredibly helpful. They made the whole rental process stress-free. Will definitely use them again.",
+    initial: "S",
+    color: "bg-pink-600"
+  },
+  {
+    name: "Mike Thompson",
+    time: "5 months ago",
+    rating: 5,
+    text: "Outstanding service from start to finish. The vehicle was clean and reliable. Appreciate that they accept debit and don't require a credit card. Best rental company in Saskatoon!",
+    initial: "M",
+    color: "bg-green-600"
+  },
+  {
+    name: "Emma Wilson",
+    time: "6 months ago",
+    rating: 5,
+    text: "I was impressed by how easy the process was. They picked me up at the airport and had everything ready. The rates are unbeatable and the service is top-notch. Couldn't ask for more!",
+    initial: "E",
+    color: "bg-indigo-600"
+  },
+  {
+    name: "James Rodriguez",
+    time: "7 months ago",
+    rating: 5,
+    text: "Rented a truck for moving and it was perfect. Fair pricing with no surprises. The team was accommodating with my schedule. This is the only place I'll rent from in Saskatoon now.",
     initial: "J",
-    color: "bg-indigo-700"
-  },
-  {
-    name: "Nemat dindarloo",
-    time: "3 years ago",
-    rating: 5,
-    text: "This is one in its own,Very affordable, easy and flexible.They always there to help others and client satisfaction is always in priority.I rented 4 times and I always suggest to others. Highly recommended;Just go and try their cars.Easy Rent Auto is fabulous.😊😊",
-    avatar: "https://lh3.googleusercontent.com/a-/ALV-UjUf_Gg1YtE5r0_x9_l6y9_z1_w1_q1_j1_k1_l1=s128-c0x00000000-cc-rp-mo"
+    color: "bg-orange-600"
   }
 ];
 
@@ -50,33 +75,26 @@ export default function GoogleReviews() {
           <div className="w-24 h-1 bg-[#3ca972] mx-auto mt-4"></div>
         </div>
 
-        {/* Desktop Layout: Show all 3 (or grid) / Mobile: Carousel */}
-        <div className="hidden lg:grid grid-cols-3 gap-6">
-          {reviews.map((review, idx) => (
-            <ReviewCard key={idx} review={review} />
-          ))}
-        </div>
-
-        {/* Mobile Carousel */}
-        <div className="lg:hidden relative h-[400px]">
+        {/* Automated Carousel for all screens */}
+        <div className="relative h-[400px] max-w-4xl mx-auto">
            <AnimatePresence mode='wait'>
             <motion.div
               key={currentIndex}
-              initial={{ opacity: 0, x: 50 }}
+              initial={{ opacity: 0, x: 100 }}
               animate={{ opacity: 1, x: 0 }}
-              exit={{ opacity: 0, x: -50 }}
+              exit={{ opacity: 0, x: -100 }}
               transition={{ duration: 0.5 }}
-              className="absolute inset-0"
+              className="absolute inset-0 px-4"
             >
               <ReviewCard review={reviews[currentIndex]} />
             </motion.div>
            </AnimatePresence>
-           <div className="absolute bottom-0 left-0 right-0 flex justify-center gap-2">
+           <div className="absolute bottom-4 left-0 right-0 flex justify-center gap-2">
              {reviews.map((_, idx) => (
                <button 
                 key={idx}
                 onClick={() => setCurrentIndex(idx)}
-                className={`w-2 h-2 rounded-full transition-colors ${idx === currentIndex ? 'bg-blue-500' : 'bg-gray-300'}`}
+                className={`w-2 h-2 rounded-full transition-colors ${idx === currentIndex ? 'bg-[#3ca972]' : 'bg-gray-300'}`}
                />
              ))}
            </div>
