@@ -52,14 +52,21 @@ const reviews = [
 const allReviews = [...reviews, ...reviews]; 
 
 export default function GoogleReviews() {
-  const [currentIndex, setCurrentIndex] = useState(0);
+  const [currentSlide, setCurrentSlide] = useState(0);
+  const reviewsPerSlide = 3;
+  const totalSlides = Math.ceil(reviews.length / reviewsPerSlide);
 
   useEffect(() => {
     const timer = setInterval(() => {
-      setCurrentIndex((prev) => (prev + 1) % reviews.length);
-    }, 4000);
+      setCurrentSlide((prev) => (prev + 1) % totalSlides);
+    }, 5000);
     return () => clearInterval(timer);
-  }, []);
+  }, [totalSlides]);
+
+  const getCurrentReviews = () => {
+    const start = currentSlide * reviewsPerSlide;
+    return reviews.slice(start, start + reviewsPerSlide);
+  };
 
   return (
     <div id="reviews" className="bg-gray-50 py-16 relative overflow-hidden">
@@ -69,28 +76,30 @@ export default function GoogleReviews() {
           <div className="w-24 h-1 bg-[#3ca972] mx-auto mt-4"></div>
         </div>
 
-        {/* Automated Carousel for all screens */}
-        <div className="relative h-[280px] max-w-6xl mx-auto">
+        {/* Automated Carousel - 3 reviews per slide */}
+        <div className="relative h-[320px] max-w-7xl mx-auto">
            <AnimatePresence mode='wait'>
             <motion.div
-              key={currentIndex}
+              key={currentSlide}
               initial={{ opacity: 0, x: 100 }}
               animate={{ opacity: 1, x: 0 }}
               exit={{ opacity: 0, x: -100 }}
               transition={{ duration: 0.5 }}
-              className="absolute inset-0 px-4 flex justify-center"
+              className="absolute inset-0 px-4"
             >
-              <div className="w-full max-w-sm md:max-w-md">
-                <ReviewCard review={reviews[currentIndex]} />
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 h-full">
+                {getCurrentReviews().map((review, idx) => (
+                  <ReviewCard key={idx} review={review} />
+                ))}
               </div>
             </motion.div>
            </AnimatePresence>
-           <div className="absolute bottom-4 left-0 right-0 flex justify-center gap-2">
-             {reviews.map((_, idx) => (
+           <div className="absolute -bottom-8 left-0 right-0 flex justify-center gap-2">
+             {[...Array(totalSlides)].map((_, idx) => (
                <button 
                 key={idx}
-                onClick={() => setCurrentIndex(idx)}
-                className={`w-2 h-2 rounded-full transition-colors ${idx === currentIndex ? 'bg-[#3ca972]' : 'bg-gray-300'}`}
+                onClick={() => setCurrentSlide(idx)}
+                className={`w-2 h-2 rounded-full transition-colors ${idx === currentSlide ? 'bg-[#3ca972]' : 'bg-gray-300'}`}
                />
              ))}
            </div>
