@@ -21,7 +21,7 @@ const reviews = [
     name: "Carter Matheson",
     time: "5 months ago",
     rating: 5,
-    text: "Like the name, it was very "easy" to rent a car here. I called and they delivered me a VW bug in 15 minutes at a very reasonable price. I will definitely be using them again should I ever need another rental in Saskatoon.",
+    text: "Like the name, it was very \"easy\" to rent a car here. I called and they delivered me a VW bug in 15 minutes at a very reasonable price. I will definitely be using them again should I ever need another rental in Saskatoon.",
     avatar: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/692f520dd71ac1b1e22d9e26/60c9b6841_Screenshot2026-01-17at044739.png"
   },
   {
