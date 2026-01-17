@@ -15,8 +15,8 @@ export default function Header() {
           />
         </div>
 
-        <div className="hidden md:flex items-center space-x-8">
-          <nav className="flex items-center space-x-6 font-medium text-gray-600">
+        <div className="hidden md:flex items-center gap-6">
+          <nav className="flex items-center gap-5 font-medium text-gray-600">
             <Link to={createPageUrl('Home')} className="hover:text-[#3ca972] transition-colors">Home</Link>
             <Link to={createPageUrl('Franchising')} className="hover:text-[#3ca972] transition-colors">Franchising</Link>
             <a href="/#about" className="hover:text-[#3ca972] transition-colors">About Us</a>
@@ -25,7 +25,7 @@ export default function Header() {
             <a href="#contact" className="hover:text-[#3ca972] transition-colors">Contact</a>
           </nav>
           
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-4 ml-2">
             <div className="flex items-center gap-2 text-[#3ca972] font-bold text-lg">
               <Phone className="w-5 h-5" />
               <span>(639) 471-4669</span>
