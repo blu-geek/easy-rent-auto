@@ -96,7 +96,7 @@ const vehicles = [
   {
     title: "Cube Vans",
     price: "80",
-    image: "https://easyrentauto.ca/wp-content/uploads/2018/08/Pic-UP-Truck.png",
+    image: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/692f520dd71ac1b1e22d9e26/cfdce626d_cubevan.jpeg",
     features: [
       { label: "$3/Day", value: "Glass & Tire Insurance" },
       { label: "$5/Day", value: "Roadside Assistance" },
@@ -130,7 +130,7 @@ export default function VehicleFleet() {
   };
 
   return (
-    <div className="py-16 bg-white">
+    <div id="vehicle-fleet" className="py-16 bg-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-2">Our Rental Car Lineup</h2>
