@@ -11,7 +11,7 @@ export default function Header() {
           <img 
             src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/692f520dd71ac1b1e22d9e26/d5f04da44_Screenshot2026-01-04at192315.png" 
             alt="Easy Rent Auto" 
-            className="h-12 md:h-16 w-auto object-contain"
+            className="h-10 md:h-10 w-auto object-contain"
           />
         </div>
 

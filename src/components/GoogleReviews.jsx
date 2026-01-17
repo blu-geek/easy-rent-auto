@@ -4,26 +4,47 @@ import { Star, Quote } from 'lucide-react';
 
 const reviews = [
   {
-    name: "Roy Feschuk",
-    time: "a year ago",
+    name: "Julian Wright",
+    time: "3 months ago",
     rating: 5,
-    text: "My son is an absolute car buff, so for grad day James set us up with this red Mercedes convertible! My son was pleasantly shocked and excited to get to use this for his grad day. James, thanks for the sweet ride for the day!",
-    avatar: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/692f520dd71ac1b1e22d9e26/c249ad7df_Screenshot2026-01-05at224304.png"
+    text: "Every time I come to Saskatoon I rent a car from Easy Rent Auto. All the staff are really friendly and helpful and the cars have been excellent. The main man James always takes really good care of me with his 'above and beyond' customer service and I'll certainly be coming back to them next time I'm in town!",
+    avatar: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/692f520dd71ac1b1e22d9e26/38a1a7c6b_Screenshot2026-01-17at044651.png"
   },
   {
-    name: "Gerald",
-    time: "a year ago",
+    name: "RJ Goreham",
+    time: "3 months ago",
     rating: 5,
-    text: "Great service good people ! I'd go back there again. They preform a great service when y need a vehicle. We'll done !",
-    initial: "G",
-    color: "bg-teal-700"
+    text: "Went goose hunting and rented a car from James. What a great company and rental experience! The van was perfect for 5 men and gear! The best thing was James is open 24/7 I called and he answered at 6 am I had my car in 20 mins! He personally came in and got the car ready! Great customer service! I will use him every time! Easy Car Rental #1! Thanks RJ Goreham Dallas Tx",
+    avatar: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/692f520dd71ac1b1e22d9e26/9bee1f49d_Screenshot2026-01-17at044713.png"
   },
   {
-    name: "Shaan Kahlon",
-    time: "a year ago",
+    name: "Carter Matheson",
+    time: "5 months ago",
     rating: 5,
-    text: "Second time renting from the guy !! Most helpful guy in the City periodWill literally come and pick you up at airport. Process is simple and fast. Will recommend 100%10/10 services. People posting bad reviews just didnt plan in advance lol.",
-    avatar: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/692f520dd71ac1b1e22d9e26/c249ad7df_Screenshot2026-01-05at224304.png"
+    text: "Like the name, it was very "easy" to rent a car here. I called and they delivered me a VW bug in 15 minutes at a very reasonable price. I will definitely be using them again should I ever need another rental in Saskatoon.",
+    avatar: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/692f520dd71ac1b1e22d9e26/60c9b6841_Screenshot2026-01-17at044739.png"
+  },
+  {
+    name: "Serena Rowley",
+    time: "5 months ago",
+    rating: 5,
+    text: "My dad got a rental from Easy Auto for a week. It was good quality, spacious, and comfortable. Good AC and good milage. My dad's flight was a day before mine as we are going to different locations. James allowed us to keep the vehicle another day and then drove us to the airport! Awesome rental experience!",
+    initial: "S",
+    color: "bg-orange-800"
+  },
+  {
+    name: "Nicholas Rutherford",
+    time: "7 months ago",
+    rating: 5,
+    text: "Needed a rental last-minute and Easy Rent Auto came through. No hassle, competitive pricing, and the car ran perfectly. Zero complaints - would absolutely use them again when in Saskatoon.",
+    avatar: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/692f520dd71ac1b1e22d9e26/3507990f8_Screenshot2026-01-17at044818.png"
+  },
+  {
+    name: "Alexander Cole",
+    time: "7 months ago",
+    rating: 5,
+    text: "We had an outstanding experience recently renting a car while visiting my son for the weekend at USask. The car was waiting for us at the airport and it was in perfect condition. Any questions we had were responded to quickly via text. We will definitely go with Easy Rent when we visit again!",
+    avatar: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/692f520dd71ac1b1e22d9e26/4df3131ee_Screenshot2026-01-17at044833.png"
   }
 ];
 
@@ -31,13 +52,12 @@ const reviews = [
 const allReviews = [...reviews, ...reviews]; 
 
 export default function GoogleReviews() {
-  // We can implement a simple carousel that shifts
   const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrentIndex((prev) => (prev + 1) % reviews.length);
-    }, 5000);
+    }, 4000);
     return () => clearInterval(timer);
   }, []);
 
@@ -49,15 +69,8 @@ export default function GoogleReviews() {
           <div className="w-24 h-1 bg-[#3ca972] mx-auto mt-4"></div>
         </div>
 
-        {/* Desktop: 3 column grid, Mobile: Automated Carousel */}
-        <div className="hidden md:grid grid-cols-3 gap-6 max-w-6xl mx-auto">
-          {reviews.map((review, idx) => (
-            <ReviewCard key={idx} review={review} />
-          ))}
-        </div>
-
-        {/* Mobile Carousel */}
-        <div className="md:hidden relative h-[320px] max-w-sm mx-auto">
+        {/* Automated Carousel for all screens */}
+        <div className="relative h-[280px] max-w-6xl mx-auto">
            <AnimatePresence mode='wait'>
             <motion.div
               key={currentIndex}
@@ -65,9 +78,11 @@ export default function GoogleReviews() {
               animate={{ opacity: 1, x: 0 }}
               exit={{ opacity: 0, x: -100 }}
               transition={{ duration: 0.5 }}
-              className="absolute inset-0 px-4"
+              className="absolute inset-0 px-4 flex justify-center"
             >
-              <ReviewCard review={reviews[currentIndex]} />
+              <div className="w-full max-w-sm md:max-w-md">
+                <ReviewCard review={reviews[currentIndex]} />
+              </div>
             </motion.div>
            </AnimatePresence>
            <div className="absolute bottom-4 left-0 right-0 flex justify-center gap-2">
