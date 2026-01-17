@@ -56,7 +56,7 @@ const faqs = [
     answer: "Keep It Easy! A Driver's License. A Deposit. A Destination! We Make Renting Great Again!"
   },
   {
-    question: "I Don't Have My International License With Me Can I Still Rent A Car?",
+    question: "Can I Rent Without My International License?",
     answer: "Yes You Can! We Welcome Drivers From All Lands Far And Near, No Limits Here Enjoy Your Vacation in Saskatoon!"
   },
   {
