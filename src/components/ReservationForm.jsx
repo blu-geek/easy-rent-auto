@@ -29,18 +29,17 @@ const locations = [
   "My Front Doorstep",
   "Saskatoon Airport - YXE Branch",
   "Sask Auto Mall - East Branch",
-  "1201 7th Ave North - Detail Shop",
-  "Saskatoon Airport",
+  "Train Station",
+  "Rider Bus Station",
+  "SGI Claims Center",
   "Hotel",
   "Hospital",
-  "SGI Claims Center",
   "Garage",
   "Body Shop",
-  "Train Station",
-  "Rider Bus Station"
+  "1201 7th Ave N - Detail Shop"
 ];
 
-const nonSpecificLocations = ["Hotel", "Hospital", "SGI Claims Center", "Garage", "Body Shop"];
+const nonSpecificLocations = ["My Front Doorstep", "Sask Auto Mall - East Branch", "Hotel", "Hospital", "SGI Claims Center", "Garage", "Body Shop"];
 
 const times = Array.from({ length: 48 }, (_, i) => {
   const hour = Math.floor(i / 2);

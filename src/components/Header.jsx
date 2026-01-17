@@ -32,9 +32,13 @@ export default function Header() {
             </div>
             <a 
               href="#easy-clean-auto" 
-              className="text-gray-600 hover:text-[#3ca972] transition-colors font-medium border-l border-gray-300 pl-4"
+              className="border-l border-gray-300 pl-4"
             >
-              Easy Clean Auto
+              <img 
+                src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/692f520dd71ac1b1e22d9e26/6764236d7_1768646548.png" 
+                alt="Easy Clean Auto" 
+                className="h-10 w-auto object-contain"
+              />
             </a>
           </div>
         </div>
