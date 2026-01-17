@@ -30,10 +30,6 @@ export default function Footer() {
           <div>
             <h3 className="text-xl font-bold mb-6 border-l-4 border-[#3ca972] pl-3">Contact Us</h3>
             <ul className="space-y-4">
-              <li className="flex items-start gap-3">
-                <MapPin className="w-5 h-5 text-[#3ca972] mt-1 flex-shrink-0" />
-                <span className="text-gray-400">901 1st Ave North, Saskatoon, SK</span>
-              </li>
               <li className="flex items-center gap-3">
                 <Phone className="w-5 h-5 text-[#3ca972] flex-shrink-0" />
                 <span className="text-gray-400">(639) 471-4669</span>
@@ -63,7 +59,7 @@ export default function Footer() {
           <div id="easy-clean-auto">
             <h3 className="text-xl font-bold mb-6 border-l-4 border-[#3ca972] pl-3">Easy Clean Auto</h3>
             <p className="text-gray-400 mb-4 leading-relaxed">
-              Saskatoon's Local 100% Canadian-owned detail shop! Open 24 hrs a day!! Booking by Appointments Only!
+              Saskatoon's Local 100% Canadian-Owned Detail Shop! Open 24 Hours A Day!! Booking By Appointments Only!
             </p>
             <p className="text-gray-400">
               1201 Seventh Ave N,<br />
@@ -72,8 +68,8 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-gray-800 pt-8 text-center text-gray-500 text-sm">
-          <p>&copy; {new Date().getFullYear()} Easy Rent Auto. All Rights Reserved.</p>
+        <div className="border-t border-gray-800 pt-8 text-center text-sm">
+          <p className="text-[#169a5a]">&copy; {new Date().getFullYear()} Easy Rent Auto. All Rights Reserved.</p>
         </div>
       </div>
     </footer>
