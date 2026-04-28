@@ -1,4 +1,5 @@
 import React from "react";
+import PageSEO from "@/components/PageSEO";
 import HeroCarousel from "@/components/HeroCarousel";
 import ReservationForm from "@/components/ReservationForm";
 import BenefitsList from "@/components/BenefitsList";
@@ -11,6 +12,10 @@ import GoogleReviews from "@/components/GoogleReviews";
 export default function Home() {
   return (
     <div className="flex flex-col">
+      <PageSEO
+        title="Easy Rent Auto | Cheap Car Rentals in Saskatoon – Open 24/7"
+        description="Easy Rent Auto is Saskatoon's best locally-owned car rental. Rentals from $15/day, open 24/7, no credit card required, pet & smoke-friendly vehicles. Book online or call (639) 471-4669."
+      />
       {/* Hero Section */}
       <section className="relative bg-[#169a5a] border-b border-[#8dc63f]">
         <div className="container mx-auto px-4 py-8 md:py-12">

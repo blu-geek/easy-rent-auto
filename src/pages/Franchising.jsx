@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import PageSEO from "@/components/PageSEO";
 import { useMutation } from '@tanstack/react-query';
 import { base44 } from '@/api/base44Client';
 import { Button } from "@/components/ui/button";
@@ -52,6 +53,10 @@ export default function Franchising() {
 
   return (
     <div className="min-h-screen bg-white">
+      <PageSEO
+        title="Franchise Opportunities | Easy Rent Auto Saskatoon"
+        description="Join the Easy Rent Auto franchise network in Saskatoon and across Canada. Explore Gold and Diamond franchise tiers and start your own car rental business today."
+      />
       {/* Green Header */}
       <div className="bg-[#1a9f54] py-12 text-center">
         <div className="container mx-auto px-4">
