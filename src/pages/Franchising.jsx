@@ -37,8 +37,6 @@ export default function Franchising() {
         city: "",
         street_address: ""
       });
-      // Optional: navigate home
-      // navigate('/');
     },
     onError: () => toast.error("Failed to submit application.")
   });
@@ -81,10 +79,6 @@ export default function Franchising() {
           </p>
           
           <p>Choose any one of our four franchise routes to drive your legacy today....</p>
-        </div>
-
-        <div className="bg-yellow-50 border border-yellow-200 p-4 mb-8 text-yellow-800 text-sm rounded">
-          Submission URL and current URL protocols do not match. Form may not function properly.
         </div>
 
         <form onSubmit={handleSubmit} className="space-y-6">
