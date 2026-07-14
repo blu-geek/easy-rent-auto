@@ -1,0 +1,49 @@
+{
+  "name": "RentalRequest",
+  "type": "object",
+  "properties": {
+    "car_selection": {
+      "type": "string",
+      "description": "Selected car type or model"
+    },
+    "pickup_location": {
+      "type": "string",
+      "description": "Location for picking up the vehicle"
+    },
+    "dropoff_location": {
+      "type": "string",
+      "description": "Location for dropping off the vehicle"
+    },
+    "pickup_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "pickup_time": {
+      "type": "string"
+    },
+    "dropoff_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "dropoff_time": {
+      "type": "string"
+    },
+    "credit_card_type": {
+      "type": "string",
+      "enum": [
+        "Visa",
+        "MasterCard",
+        "Amex",
+        "None",
+        "Cash",
+        "Debit"
+      ],
+      "description": "Payment method type"
+    }
+  },
+  "required": [
+    "car_selection",
+    "pickup_location",
+    "pickup_date"
+  ]
+}

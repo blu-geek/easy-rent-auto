@@ -6,22 +6,22 @@ const slides = [
   {
     title: "SASKATOON RENTALS OPEN 24 HOURS!!!",
     subtitle: "Start driving for just $15 a day!!!",
-    image: "https://easyrentauto.ca/wp-content/uploads/2018/10/truck-ram-1500-copy.png"
+    image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&auto=format&fit=crop"
   },
   {
     title: "BEST GOOGLE 5 STAR RATED AND 100% CANADIAN-OWNED!!!",
     subtitle: "Locally owned and operated, open 24 hours.",
-    image: "https://easyrentauto.ca/wp-content/uploads/2018/09/2013-smart-ForTwo.png"
+    image: "https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?w=800&auto=format&fit=crop"
   },
   {
     title: "HMMM...NO CREDIT CARD?- NO PROBLEM!!!",
     subtitle: "Just turned 18?- No problem!!! Out of country licenses are also accepted.",
-    image: "https://easyrentauto.ca/wp-content/uploads/2018/09/chrysler-300-1.png"
+    image: "https://images.unsplash.com/photo-1494976388531-d1058494cdd8?w=800&auto=format&fit=crop"
   },
   {
     title: "NO CHARGE FOR ADDITIONAL DRIVERS!!! PET & SMOKE FRIENDLY CARS AVAILABLE!!!",
     subtitle: "No deposit reservations - No cancellation fees.",
-    image: "https://easyrentauto.ca/wp-content/uploads/2018/09/Grand-Cherokee-Limited.png"
+    image: "https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?w=800&auto=format&fit=crop"
   }
 ];
 

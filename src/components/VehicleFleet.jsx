@@ -5,7 +5,7 @@ const vehicles = [
   {
     title: "Cheap Car Rentals",
     price: "15",
-    image: "https://easyrentauto.ca/wp-content/uploads/2018/08/1.jpg",
+    image: "https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?w=600&auto=format&fit=crop",
     features: [
       { label: "$3/Day", value: "Glass & Tire Insurance" },
       { label: "$5/Day", value: "Roadside Assistance" },
@@ -18,7 +18,7 @@ const vehicles = [
   {
     title: "Coupes",
     price: "20",
-    image: "https://easyrentauto.ca/wp-content/uploads/2019/01/Coupe.png",
+    image: "https://images.unsplash.com/photo-1494976388531-d1058494cdd8?w=600&auto=format&fit=crop",
     features: [
       { label: "$3/Day", value: "Glass & Tire Insurance" },
       { label: "$5/Day", value: "Roadside Assistance" },
@@ -31,7 +31,7 @@ const vehicles = [
   {
     title: "Sedans",
     price: "35",
-    image: "https://easyrentauto.ca/wp-content/uploads/2018/08/2.jpg",
+    image: "https://images.unsplash.com/photo-1502877338535-766e1452684a?w=600&auto=format&fit=crop",
     features: [
       { label: "$3/Day", value: "Glass & Tire Insurance" },
       { label: "$5/Day", value: "Roadside Assistance" },
@@ -44,7 +44,7 @@ const vehicles = [
   {
     title: "SUVs",
     price: "50",
-    image: "https://easyrentauto.ca/wp-content/uploads/2018/08/SUV.png",
+    image: "https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?w=600&auto=format&fit=crop",
     features: [
       { label: "$3/Day", value: "Glass & Tire Insurance" },
       { label: "$5/Day", value: "Roadside Assistance" },
@@ -57,7 +57,7 @@ const vehicles = [
   {
     title: "Mini Vans",
     price: "50",
-    image: "https://easyrentauto.ca/wp-content/uploads/2019/01/minvan.png",
+    image: "https://images.unsplash.com/photo-1609521263047-f8f205293f24?w=600&auto=format&fit=crop",
     features: [
       { label: "$3/Day", value: "Glass & Tire Insurance" },
       { label: "$5/Day", value: "Roadside Assistance" },
@@ -70,7 +70,7 @@ const vehicles = [
   {
     title: "Pick-Up Trucks",
     price: "45",
-    image: "https://easyrentauto.ca/wp-content/uploads/2018/08/Pic-UP-Truck.png",
+    image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&auto=format&fit=crop",
     features: [
       { label: "$3/Day", value: "Glass & Tire Insurance" },
       { label: "$5/Day", value: "Roadside Assistance" },
@@ -83,7 +83,7 @@ const vehicles = [
   {
     title: "Convertibles",
     price: "35",
-    image: "https://easyrentauto.ca/wp-content/uploads/2018/08/2.jpg",
+    image: "https://images.unsplash.com/photo-1555215695-3004980ad54e?w=600&auto=format&fit=crop",
     features: [
       { label: "$3/Day", value: "Glass & Tire Insurance" },
       { label: "$5/Day", value: "Roadside Assistance" },
@@ -109,7 +109,7 @@ const vehicles = [
   {
     title: "Rent-A-Driver",
     price: "15/Hour",
-    image: "https://easyrentauto.ca/wp-content/uploads/2018/08/1.jpg",
+    image: "https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?w=600&auto=format&fit=crop",
     features: [
       { label: "$15/Hour", value: "9:00am - 5:00PM" },
       { label: "$20/Hour", value: "5:00pm - 11:00pm" },
